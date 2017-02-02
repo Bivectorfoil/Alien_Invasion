@@ -1,11 +1,14 @@
 # -*- coding:utf-8 -*-
 
 import pygame
+from pygame.sprite import Sprite
 
-class Ship():
+
+class Ship(Sprite):
 
 	def __init__(self,ai_settings,screen):
 		'''初始化飞船并设置其初始位置'''
+		super(Ship,self).__init__()
 		self.screen = screen
 		self.ai_settings = ai_settings
 
@@ -47,3 +50,8 @@ class Ship():
 	def blitme(self):
 		'''在指定位置放置飞船'''
 		self.screen.blit(self.image,self.rect)
+
+	def center_ship(self):
+		'''让飞船在屏幕上居中'''
+		self.center = 600
+		self.bottom = 800
