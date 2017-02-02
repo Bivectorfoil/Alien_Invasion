@@ -37,4 +37,3 @@ class Alien(Sprite):
 		self.rect.x = self.x
 
 
-
