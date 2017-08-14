@@ -8,5 +8,7 @@ Learning from Python_Crash_Course:https://github.com/ehmatthes/pcc
 ```bash
 git clone https://github.com/Bivectorfoil/Alien_Invasion.git
 
+pip install -r requirements.txt
+
 python alien_invasion.py
 ```
